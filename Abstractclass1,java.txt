@@ -1,0 +1,14 @@
+abstract Mona
+{
+  Mona()
+  {
+    System.out.println(" Constructor....");
+  }
+  {
+    System.out.println(" Instance Initialixer block....");
+  }
+  public static void main(String arg[])
+  {
+    Mona m = new Mona;
+  }
+}

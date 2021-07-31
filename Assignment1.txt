@@ -1,0 +1,165 @@
+//Wap TO Complete The Assignment Number no.1
+//Price.java
+import java.util.Scanner;
+class price
+{   
+   double cost,p;
+   final double tax=7.5;
+   int num;
+   void order(double cost,int num)
+   {   
+      System.out.print("\n Order      : "+ num +" x $"+ cost+"\n" );  
+   }
+   void Subtotal(double cost,int num)
+   {
+      System.out.print("\n Subtotal   : $"+(num*cost)+"\n");
+   }
+   void tax(double cost,int num)
+   {
+      p=((tax/100)*(num*cost));
+      System.out.print("\n tax(7.5%)  : $"+p+"\n");
+   }
+   void total(double cost,int num)
+   {   
+      System.out.print("\n Total      : $"+((num*cost)+p));  
+   }
+   public static void main( String args[])
+   {
+      double Cost_Item ;
+      int Num_of_item;
+	  Scanner s = new Scanner(System.in);
+	  price p = new price();
+	  System.out.print("\n Enter The Cost of Item : ");
+	  Cost_Item=s.nextDouble();
+	  System.out.print("\n Enter The Number of Item : ");
+	  Num_of_item=s.nextInt();
+       p.order(Cost_Item , Num_of_item);
+       p.Subtotal(Cost_Item , Num_of_item);	  
+	  p.tax(Cost_Item , Num_of_item);
+	  p.total(Cost_Item , Num_of_item);
+   }
+}
+/*
+  output:
+   
+  
+C:\java Programs>java price
+
+ Enter The Cost of Item : 23.65
+
+ Enter The Number of Item : 3
+
+ Order      : 3 x $23.65
+
+ Subtotal   : $70.94999999999999
+
+ tax(7.5%)  : $5.321249999999999
+
+ Total      : $76.27124999999998
+C:\java Programs>javac Price.java
+
+C:\java Programs>java price
+
+ Enter The Cost of Item : 99.99
+
+ Enter The Number of Item : 3
+
+ Order      : 3 x $99.99
+
+ Subtotal   : $299.96999999999997
+
+ tax(7.5%)  : $22.497749999999996
+
+ Total      : $322.46774999999997
+C:\java Programs>javac Price.java
+
+
+*/
+
+// Wap For Assingment num two
+//Tip.java
+import java.util.Scanner;
+class Tip
+{
+   double cost;
+   final double x=0.1 , y=0.15 , z=0.2;
+   void tip(double cost)
+   {
+      System.out.print(" Meel     : $"+cost+"\n\n");
+      System.out.print(" 10% Tip  : $"+(x*cost)+"\n\n");
+      System.out.print(" 15% Tip  : $"+(y*cost)+"\n\n");
+      System.out.print(" 20% Tip  : $"+(z*cost)+"\n\n");
+   }
+   public static void main(String args[])
+   {
+      double meel;
+	  Tip t = new Tip();
+	  Scanner s = new Scanner(System.in);
+	  System.out.print(" Pelase Enter the cost of meel : ");
+	  meel=s.nextDouble();
+	  t.tip(meel);
+   }
+}
+
+/*
+  output:
+   
+  C:\java Programs>javac Tip.java
+
+  C:\java Programs>java Tip
+ Pelase Enter the cost of meel : 236.56
+ Meel     : $236.56
+
+ 10% Tip  : $23.656000000000002
+
+ 15% Tip  : $35.484
+
+ 20% Tip  : $47.312000000000005
+
+
+C:\java Programs>   
+
+   
+ */
+
+//Wap for Assignment 3
+//Wap to convert to tempreature
+import java.util.Scanner;
+class Temp
+{
+  double Celsius;
+  double cal;
+  void Fer(double Celsius)
+  {
+    cal=((Celsius*(9/5.0))+32);
+	System.out.print("\n Fahrenheit : "+cal+"F");
+  }
+  public static void main( String args[])
+  {
+    double c;
+	Temp t = new Temp();
+	Scanner s = new Scanner(System.in);
+	System.out.print("\n Enter The Temperature : ");
+	c=s.nextDouble();
+	t.Fer(c);
+  }
+} 
+/*
+ output 
+ 
+  C:\java Programs>javac Temparature.java
+
+C:\java Programs>java Temp
+
+ Enter The Temperature : 21.5
+
+ Fahrenheit : 70.7F
+C:\java Programs>javac Temparature.java
+
+C:\java Programs>java Temp
+
+ Enter The Temperature : 38.6
+
+ Fahrenheit : 101.48F
+C:\java Programs>
+*/

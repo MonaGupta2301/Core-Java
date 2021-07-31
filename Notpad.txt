@@ -1,0 +1,37 @@
+
+import java.awt.Frame;
+import java.awt.Menu;
+import java.awt.MenuBar;
+import java.awt.MenuItem;
+
+public class Notpad  
+{
+    Notpad()
+    {
+        Frame f = new Frame();
+        f.setSize(1200,1200);
+        MenuBar m = new MenuBar();
+        Menu File=new Menu("File");
+        Menu Edit = new Menu("Edit");
+        MenuItem Save = new MenuItem();
+        MenuItem Open = new MenuItem();
+        MenuItem Save_As = new MenuItem();
+        
+        MenuItem Font = new MenuItem();
+        
+        File.add(Save);
+        File.add(Save_As);
+        File.add(Open);
+        Edit.add(Font);
+        
+        m.add(File);
+        m.add(Edit);
+        f.setMenuBar(m);
+    
+    }
+    public static void main(String[] args)
+    {
+        Notpad n = new Notpad();
+    }
+    
+}
