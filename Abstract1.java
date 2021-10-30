@@ -8,6 +8,7 @@ abstract class Shape
 	   }
 }
 class Shape2 extends Shape
+
 {
 	void msg()
 	{
