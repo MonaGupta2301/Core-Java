@@ -15,7 +15,6 @@ class Test
 	name=n;
    }
    void Disp()
-
    {
       System.out.println("\n ge is : "+age+"\n Percentage is : "+per+"\n Name is : "+name);
    }
