@@ -14,7 +14,6 @@ class Priority extends Thread{
 //		c1.setPriority(Thread.NORM_PRIORITY);
 //		c2.setPriority(Thread.NORM_PRIORITY);
                 c1.start();
-	        c2.start();
-			 
+	        c2.start();	 
 	 }
 }
